@@ -1,0 +1,55 @@
+{% extends "admin/base.html" %}
+
+
+{% block title %}{{ title }} | FARMACIA EMANUEL{% endblock %}
+{% block extrastyle %}
+
+	<style>
+		#header {
+                    background: #D4E6F1  !important;
+                    color: #154360;
+                }
+
+        #header a:link, #header a:visited {
+                    color: #154360;
+
+                }
+        .module caption, .inline-group h2 {
+        	       padding: 8px 10px;
+        	       border-radius: 20px;
+        	       background:#154360 !important;
+        	       border: #BFC9CA 5px solid;
+
+                }
+
+        div.breadcrumbs {
+                    background: #154360;
+                    padding: 12px 40px;
+                    border: none;
+                    font-size: 15px;
+                    color: #c4dce8;
+                    text-align: left;
+                }                       
+       #content-related {
+                    background: #FDFEFE  !important;
+                    border-radius: 20px;
+                    border: #154360 5px solid;
+                }
+        .calendar caption, .calendarbox h2 {
+                    margin: 0;
+                    text-align: center;
+                    border-top: none;
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #FDFEFE;
+                }
+
+	</style>
+
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}"></a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
